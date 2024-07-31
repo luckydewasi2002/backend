@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Card</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.weather-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    background-image: url(https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148639325.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header {
+    margin-bottom: 20px;
+
+}
+
+.location {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 0px;
+    color: #1a1a1a;
+}
+
+.date {
+    color: #181818;
+}
+
+.current-weather {
+    margin: 20px 0;
+    position: relative;
+}
+
+.weather-image {
+    width: 70px;
+    position: absolute;
+    top: -80px;
+    left: calc(55% - 50px);
+    border-radius: 50px;
+
+}
+
+.temperature {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+.condition {
+    font-size: 1.2em;
+    color: #0f0e0e;
+}
+
+.additional-info {
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #0f0f0f;
+}
+.additional-info div{
+  padding: 10px 0px;
+}
+
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    text-align: center;
+
+}
+.forecast-item div{
+  color: #0f0f0f;
+}
+
+.forecast-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.deg{
+  margin: 0px 15px;
+}
+
+  </style>
+</head>
+<body>
+    <div class="weather-card">
+        <div class="header">
+            <div class="location">San Francisco, CA</div>
+            <div class="date">Tuesday, July 4, 2024, 10:00 AM</div>
+        </div>
+        <div class="current-weather">
+            <img src="https://i.pinimg.com/474x/3d/39/25/3d3925e6b0953861ff3a81dc1e9cee88.jpg" alt="Sunny" class="weather-image">
+            <div class="temperature">20°C</div>
+            <div class="condition">Sunny</div>
+        </div>
+        <div class="additional-info">
+            <div>High: 22°C</div>
+            <div>Low: 15°C</div>
+            <div>Wind: 10 km/h</div>
+            <div>Humidity: 60%</div>
+        </div>
+        <div class="forecast">
+            <div class="forecast-item">
+                <div>Wednesday</div>
+                <img src="https://pics.craiyon.com/2023-09-29/8e5c90a15f344dd5a76b28be92e69714.webp" alt="Cloudy" class="forecast-image">
+                <div>19°C / 14°C</div>
+            </div>
+            <div class="forecast-item">
+                <div>Thursday</div>
+                <img src="https://browsecat.art/sites/default/files/rainy-weather-background-128857-2127191-9114167.png" alt="Rain" class="forecast-image">
+                <div class="deg">18°C / 13°C</div>
+            </div>
+            <div class="forecast-item">
+                <div>Friday</div>
+                <img src="https://i.pinimg.com/474x/3d/39/25/3d3925e6b0953861ff3a81dc1e9cee88.jpg" alt="Sunny" class="forecast-image">
+                <div>20°C / 14°C</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

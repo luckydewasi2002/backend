@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather card 3 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+           .container{
+            height:600px;
+            width: 1200px;
+            display: flex;
+           flex-wrap: wrap;
+            border-radius: 2rem;
+            margin-left: 5rem;
+            margin-top: 3rem;
+            margin-right: 5rem;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        
+            .card1{
+            height: 90%;
+            width: 300px;
+            border: 1px solid grey;
+            margin: 30px;
+            margin-left: 150px;
+            border-radius: 1rem;
+            background-color: #D3D2D3;
+            /* background: url(https://i.pinimg.com/originals/b3/7f/19/b37f19f8d802dae63f088a95cdefa1ef.jpg); */
+            } 
+            .frist{
+
+                height: 60%;
+             /* border: 1px solid red; */
+             background: url(https://i.natgeofe.com/n/b07965f4-db84-42bf-acfa-0df9d0040d5b/GettyImages-1241028054_square.jpg);
+              background-size: cover;
+              border-radius: 1rem 1rem 0 0;
+            }
+            .second{
+                height: 40%;
+                /* border: 1px solid yellow; */
+               
+                 background: url(https://img.freepik.com/free-photo/surface-with-abstract-watercolor-paint_23-2148733389.jpg?size=626&ext=jpg&ga=GA1.1.2113030492.1720224000&semt=ais_user);
+                 background-size: cover;
+                 border-radius:0 0 1rem 1rem ;
+                 display: flex;
+            }
+        .card2{
+            height: 90%;
+            width: 300px;
+            border: 1px solid grey;
+            margin: 30px;
+            margin-left: 90px;
+            border-radius: 1rem;
+            /* background-color: #D3D2D3; */
+            background: url(https://png.pngtree.com/background/20230413/original/pngtree-warm-background-of-small-town-at-the-foot-of-the-mountain-picture-image_2422430.jpg);
+           
+        }
+        .frist1{
+
+height: 60%;
+/* border: 1px solid red; */
+background: url(https://pics.craiyon.com/2023-12-19/nvXqNJg_Qy6MPD_nt38hTA.webp);
+background-size: cover;
+border-radius: 1rem 1rem 0 0;
+}
+        .snow{
+            margin-left: 90px;
+           padding-top: 50px;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+        .china{
+            margin-left: 95px;
+          padding-top: 10px;
+            color: white;
+            font-size: 15px;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+        .icon{
+            margin-left: 80px;
+          padding-top: 20px;
+            color: white;
+            font-size: 60px;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+        .week{
+            width: 14%;
+           
+            height: 100%;
+        }
+        .deg1{
+            padding-top: 70px;
+            padding-left: 10px;
+            color: rgb(103, 143, 176);
+            font-family: sans-serif;
+            font-weight: 300;
+        }
+        .deg2{
+            padding-top: 50px;
+            padding-left: 10px;
+            color: rgb(9, 73, 125);
+            font-family: sans-serif;
+            font-weight: bold;
+            
+        }
+        .deg23{
+            padding-top: 50px;
+            padding-left: 10px;
+            color: rgb(103, 143, 176);
+            font-family: sans-serif;
+            font-weight: 300;
+            
+        }
+        .deg3{
+            padding-top: 90px;
+            padding-left: 10px;
+            color: rgb(28, 114, 184);
+            font-family: sans-serif;
+            font-weight: 300;
+        }
+        .deg31{
+            padding-top: 90px;
+            padding-left: 10px;
+            color: rgb(9, 73, 125);
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .deg4{
+            padding-top: 30px;
+            padding-left: 10px;
+            color: rgb(103, 143, 176);
+            font-family: sans-serif;
+            font-weight: 300;
+        }
+        .wname1{
+            padding-top: 70px;
+            padding-left: 5px;
+            color: rgb(103, 143, 176);
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        .wname2{
+            padding-top: 90px;
+            padding-left: 5px;
+            color:  rgb(9, 73, 125);
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .wname23{
+            padding-top: 90px;
+            padding-left: 5px;
+            color:  rgb(103, 143, 176);
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        .wname3{
+            padding-top: 50px;
+            padding-left: 5px;
+            color: rgb(103, 143, 176);
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        .wname31{
+            padding-top: 50px;
+            padding-left: 5px;
+            color:  rgb(9, 73, 125);
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .wname4{
+            padding-top: 110px;
+            padding-left: 5px;
+            color: rgb(103, 143, 176);
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        .week i{
+            color: rgb(29, 120, 194);
+            padding-left: 8px;
+            padding-top: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+            <div class="frist">
+                <p class="snow">Heavy Snow</p>
+                <p class="china">Beijing, China</p>
+                <p class="icon"><i class="fa-solid fa-cloud-meatball"></i> -8°</p>
+            </div>
+            <div class="second">
+                <div class="week">
+                    <p class="deg1">-9°</p>
+                   
+                    <p class="wname1">Mon</p>
+                    <i class="fa-solid fa-cloud-rain"></i>
+                </div>
+                <div class="week">
+                    <p class="deg2">-8°</p>
+                   
+                    <p class="wname2">Tue</p>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                </div>
+                <div class="week">
+                    <p class="deg1">-9°</p>
+                    <p class="wname1">Wed</p>
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                </div>
+                <div class="week">
+                    <p class="deg3">-10°</p>
+                    <p class="wname3">Thu</p>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                </div>
+                <div class="week">
+                    <p class="deg1">-9°</p>
+                    <p class="wname1">Fri</p>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                </div>
+                <div class="week">
+                    <p class="deg1">-9°</p>
+                    <p class="wname1">Sat</p>
+                    <i class="fa-regular fa-sun"></i>
+                </div>
+                <div class="week">
+                    <p class="deg4">-6°</p>
+                    <p class="wname4">Sun</p>
+                    <i class="fa-regular fa-sun"></i>
+                </div>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="frist1">
+                <p class="snow">Heavy Snow</p>
+                <p class="china">Beijing, China</p>
+                <p class="icon"><i class="fa-solid fa-cloud-meatball"></i> -10°</p>
+            </div>
+            <div class="second">
+                <div class="week">
+                    <p class="deg1">-9°</p>
+                   
+                    <p class="wname1">Mon</p>
+                    <i class="fa-solid fa-cloud-rain"></i>
+                </div>
+                <div class="week">
+                    <p class="deg23">-8°</p>
+                   
+                    <p class="wname23">Tue</p>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                </div>
+                <div class="week">
+                    <p class="deg1">-9°</p>
+                    <p class="wname1">Wed</p>
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                </div>
+                <div class="week">
+                    <p class="deg31">-10°</p>
+                    <p class="wname31">Thu</p>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                </div>
+                <div class="week">
+                    <p class="deg1">-9°</p>
+                    <p class="wname1">Fri</p>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                </div>
+                <div class="week">
+                    <p class="deg1">-9°</p>
+                    <p class="wname1">Sat</p>
+                    <i class="fa-regular fa-sun"></i>
+                </div>
+                <div class="week">
+                    <p class="deg4">-6°</p>
+                    <p class="wname4">Sun</p>
+                    <i class="fa-regular fa-sun"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

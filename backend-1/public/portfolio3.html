@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>portfolio 3</title>
+    <style>
+        .container{
+            width: 70%;
+            height: 100vh;
+            margin: auto;
+            background-color:   #c9cffc;
+            padding-top: 40px;
+            padding-left: 60px;
+        }
+        .main{
+            width: 95%;
+            height: 100%;
+         
+            background-color: aliceblue;
+        }
+        .upper{
+            width: 100%;
+            height: 75%;
+            /* border: 1px solid red; */
+            display: flex;
+        }
+        
+        .left{
+            width: 60%;
+            height: 100%;
+            /* border: 1px solid gold; */
+        }
+        .right{
+            width: 40%;
+            height: 100%;
+            /* border: 1px solid yellow; */
+        }
+        #laxman{
+          font-weight: 600;
+          margin-left: 4rem;
+        }
+        #home{
+          color: black;
+          font-weight: 400;
+          margin-left: 10rem;
+        }
+        #service{
+          color: black;
+          font-weight: 400;
+        }
+        #product{
+          color: black;
+          font-weight: 400;
+        }
+        .top{
+          height: 45%;
+          width: 100%;
+          /* border: 1px solid red; */
+        }
+        .down{
+          height: 44%;
+          width: 100%;
+          /* border: 1px solid green; */
+          display: flex;
+        }
+        #new{
+          font-family: sans-serif;
+          font-weight: 600;
+          margin-left: 5rem;
+          color: red;
+          font-size: 13px;
+          margin-top: 2rem;
+        }
+        .top h1{
+        margin-left: 5rem;
+         
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: 600;
+          /* font-size: 20px; */
+          font-size: 35px;
+          letter-spacing: 1px;
+        }
+        #fashion{
+          font-family: sans-serif;
+          font-size: 15px;
+          margin-left: 5rem;
+          font-weight: bold;
+        }
+        .leftbtn{
+          width: 75%;
+          height: 100%;
+          /* border: 1px solid yrllow; */
+        }
+        .rightpic{
+          width: 35%;
+          height: 100%;
+          /* border: 1px solid gold; */
+          position: relative;
+        }
+        .leftbtn button{
+          margin-left: 5rem;
+          margin-top: 2rem;
+          color: white;
+          background-color: black;
+          padding: 5px;
+          border: none;
+        }
+        .leftbtn img{
+          height: 80px;
+          width: 160px;
+          margin-left: 5rem;
+          margin-top: 2rem;
+          
+        }
+        .rightpic img{
+          height: 100%;
+          width: 100%;
+        }
+        .star{
+          position: absolute;
+          left: -20px;
+          top: -20px;
+        }
+        .star i{
+          color: red;
+          font-size: 40px;
+          font-weight: 100;
+        }
+        .right input{
+          width:100px;
+          margin-left: 0px;
+        }
+        #store{
+          color: black;
+          font-weight: 400;
+          margin-left: 10rem;
+        }
+        .images{
+          margin-top: 3rem;
+          width: 100%;
+          height: 80%;
+          /* border: 1px solid red; */
+        }
+        .toop{
+          height: 80%;
+          width:80%;
+          /* border: 1px solid green; */
+          position: relative;
+
+        }
+        .toop img{
+          height: 100%;
+          width: 100%;
+        }
+        .heart{
+          position: absolute;
+          top: 170px;
+          left: 0px;
+          height: 80px;
+          width: 80px;
+          background-color: white;
+        }
+        .heart i{
+          margin-left: 20px;
+          margin-top: 20px;
+          color: rgb(235, 29, 29);
+          font-size: 40px;
+        }
+        .exp{
+          height: 80px;
+          width: 80px;
+          top: 10px;
+          left: -40px;
+          position: absolute;
+          background-color: grey;
+          border-radius: 50px;
+          rotate: 330deg;
+        
+        }
+        .exp p{
+          font-family: sans-serif;
+          text-align: center;
+          margin-top: 15px;
+          color: white;
+        }
+        .lowwer p{
+          margin-top: 1rem;
+          margin-left: 5rem;
+          font-family: sans-serif;
+          
+        }
+        #arrow{
+              margin-left: 1rem;
+              font-size: 20px;
+              
+        }
+        #arrow1{
+          margin-left: 2rem;
+          font-size:20px ;
+          font-weight: bold;
+        }
+        .lower{
+            width: 100%;
+            height: 25%;
+            /* border: 1px solid green; */
+            display: flex;
+        }
+        .icon{
+          height: 100%;
+          width: 25%;
+          /* border: 2px solid green; */
+          display: flex;
+          padding-left: 4rem;
+          padding-top: 4rem;
+        }
+        .icon i{
+          margin:5px;
+          font-size: 30px;
+          
+        }
+        .contents{
+          height: 100%;
+          width: 50%;
+          /* border: 2px solid green; */
+        }
+        .contents p{
+          margin-top: 2rem;
+          font-family: sans-serif;
+          margin-left:3rem;
+        }
+        .contents h4{
+         
+          font-family: sans-serif;
+          margin-left:3rem;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .video{
+          height: 100%;
+          width: 25%;
+          /* border: 2px solid green; */
+        }
+        .imgs{
+          height: 100px;
+          width: 150px;
+          margin-top: 2rem;
+          margin-left: 3rem;
+          border-radius: 30px;
+          background: url(https://images.pexels.com/photos/2269648/pexels-photo-2269648.jpeg);
+          background-size: cover;
+        }
+        .imgs i{
+          margin-top: 30px;
+          margin-left: 50px;
+        font-size: 40px;
+          color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+        <div class="main"> 
+            <div class="upper">
+                <div class="left">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#" id="laxman">Handsome </a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" id="service">Service</a>
+                              </li>
+                              <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li> -->
+                              <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" id="product">Product</a>
+                              </li>
+                            </ul>
+                            <form class="d-flex">
+                              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button> -->
+                            </form>
+                          </div>
+                        </div>
+                      </nav>
+                      <div class="top">
+                        <p id="new">NEW COLLECTION-2021</p>
+                        <h1 id="Look">MAKE YOUR <br> LOOK MORE <br>PERFECT</h1>
+                        <p id="fashion">Fashion-Trend-Lifestyle</p>
+                      </div>
+                      <div class="down">
+                        <div class="leftbtn">
+                          <button>Shop Collection <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnKJVzah4Bck0rxvp8Do_m-8UDRb9lGPxsEg&s" alt="">
+                        </div>
+                        <div class="rightpic">
+                          <img src="https://i.pinimg.com/474x/fa/22/15/fa22158fe8160a8b8192de76595a20f1.jpg" alt="">
+                          <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              
+
+                <div class="right">
+                  <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" id="store ">store</a>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                       
+                      </form>
+                    </div>
+                  </nav>
+                  <div class="images">
+                    <div class="toop">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2w6EQvaZ5BmADUUPFWK5Yn0Izf-is_BhXTw&s" alt="">
+                       <div class="heart">
+                        <i class="fa-solid fa-heart"></i>
+                       </div>
+                       <div class="exp">
+                        <p>Explore our shop</p>
+                       </div>
+                  
+                    </div>
+                    <div class="lowwer">
+                      <p>01-------05   <span id="arrow">< </span> <span id="arrow1">></span></p>
+                    </div>
+                  </div>
+
+
+
+
+                  </div>
+                
+            </div>
+        <div class="lower">
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+          </div>
+          <div class="contents">
+            <p>joi us our fashoin designer</p>
+            <h4>New Collection inspired by new life style</h4>
+          </div>
+          <div class="video">
+            <div class="imgs">
+              <i class="fa-solid fa-circle-play"></i>
+            </div>
+           
+          </div>
+        </div>
+    </div>
+  
+    </div>
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

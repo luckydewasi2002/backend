@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>portfolio 2</title>
+    <style>
+        .containers{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    background-color: #6a6aa7;
+    border-radius: 5px;
+}
+.main{
+    width: 90%;
+    height: 96%;
+    margin: auto;
+    background-color: white;
+    margin-top: 2rem;
+}
+.main1{
+      width: 97%;
+      height: 70%;
+      background-color: #f4f5fa;
+      /* border: 1px solid red; */
+      margin-top: 12px;
+      margin-left: 12px;
+}
+
+#navbar{
+  font-size: 15px;
+  width: 90%;
+  margin: auto;
+}
+#laxman{
+  color: black;
+  font-weight: bold;
+}
+#home{
+  margin-left: 2rem;
+  color: rgb(74, 68, 68);
+  font-weight: 700;
+}
+#about{
+  color:rgb(74, 68, 68) ;
+  font-weight: 500;
+}
+#work{
+  color:rgb(74, 68, 68) ;
+  font-weight: 500;
+}
+#port{
+  color:rgb(74, 68, 68) ;
+  font-weight: 500;
+  cursor: pointer;
+}
+#service{
+  color:rgb(74, 68, 68) ;
+  font-weight: 500;
+  cursor: pointer;
+}
+#conbtn{
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid red;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 97%;
+  height: 85%;
+  margin: auto;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+}
+.left{
+  width: 60%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+}
+
+.hi{
+  margin-top: 15px;
+  margin-left: 60px;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+.name{
+  margin-left: 60px;
+  font-family: sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.exp{
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-left: 60px;
+  font-size: 13px;
+}
+#btns{
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 60px;
+  padding: 5px;
+}
+#hire{
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#know{
+  border: 2px solid red;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.design{
+  font-family: sans-serif;
+  margin-left: 60px;
+
+}
+.design i{
+  color: red;
+  font-size: 30px;
+}
+.logo{
+  display: flex;
+  margin-left: 60px;
+  padding-left: 20px;
+}
+.logo img{
+  height: 20px;
+  width: 80px;
+  margin-left: 15px;
+ 
+}.right{
+  width: 40%;
+  height: 100%;
+  /* border: 1px solid green; */
+  position: relative;
+}
+.right img{
+  height: 100%;
+  width: 100%;
+}
+.award{
+  position: absolute;
+  height: 120px;
+  width: 120px;
+ 
+  border-radius: 100px;
+  top: 150px;
+  left: -60px;
+  background-color: #3dd68f;
+}
+.award h4{
+  font-family: sans-serif;
+  font-weight: 800;
+text-align: center;
+margin-top: 30px;
+font-size: 20px;
+}
+.award p{
+  font-family: sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 12px;
+}
+.projects{
+  position: absolute;
+  height: 120px;
+  width: 120px;
+ 
+  border-radius: 100px;
+  top: 50px;
+  right: -60px;
+  background-color: #3dd68f;
+}
+.projects i{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 35px;
+  font-size: 50px;
+  color: yellow;
+}
+.projects p{
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.main2{
+    width:95% ;
+    height:30%;
+    display: flex;
+}
+.footer1{
+  width: 25%;
+  height: 80%;
+ background-color:  #000099;
+ margin-left: 25px;
+ margin-top: 20px;
+
+}
+.footer1 h1{
+  font-family: sans-serif;
+  padding-top: 10px;
+padding-left: 70px;
+color: white;
+}
+.footer1 p{
+  font-family: sans-serif;
+ 
+padding-left: 70px;
+color: white;
+font-size: 15px;
+}
+.footer2{
+  width: 25%;
+  height: 90%;
+  /* border: 1px solid red; */
+ margin-left: 25px;
+}
+.footer2 i{
+  margin-top: 30px;
+  margin-left: 60px;
+  font-size: 30px;
+  color: blue;
+}
+.footer2 h5{
+ margin-top: 10px;
+  margin-left: 10px;
+ font-family: sans-serif;
+ font-weight: 700;
+ font-size: 15px;
+
+}
+.footer2 p{
+  margin-top: 10px;
+  margin-left: 10px;
+ font-family: sans-serif;
+ font-weight: 500;
+ font-size: 13px;
+}
+.footer3{
+  width: 25%;
+  height: 90%;
+  /* border: 1px solid red; */
+ margin-left: 25px;
+}
+.footer3 i{
+  margin-top: 30px;
+  margin-left: 60px;
+  font-size: 30px;
+  color: rgb(163, 240, 9);
+}
+.footer3 h5{
+ margin-top: 10px;
+  margin-left: 10px;
+ font-family: sans-serif;
+ font-weight: 700;
+ font-size: 15px;
+
+}
+.footer3 p{
+  margin-top: 10px;
+  margin-left: 10px;
+ font-family: sans-serif;
+ font-weight: 500;
+ font-size: 13px;
+}
+.footer4{
+  width: 25%;
+  height: 90%;
+  /* border: 1px solid red; */
+ margin-left: 25px;
+}
+.footer4 i{
+  margin-top: 30px;
+  margin-left: 60px;
+  font-size: 30px;
+  color: rgb(32, 19, 150);
+}
+.footer4 h5{
+ margin-top: 10px;
+  margin-left: 10px;
+ font-family: sans-serif;
+ font-weight: 700;
+ font-size: 15px;
+
+}
+.footer4 p{
+  margin-top: 10px;
+  margin-left: 10px;
+ font-family: sans-serif;
+ font-weight: 500;
+ font-size: 13px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="containers">
+        <div class="main">
+       <div class="main1">
+      <div class="container">  
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="laxman">Laxman Dewasi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" itemid="work" >
+                    Works
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" id="port">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" id="service">Services</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+               
+                <button class="btn btn-outline-success" type="submit" id="conbtn">Contact Me</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="left">
+         <h2 class="hi">Hi! I Am</h2>
+         <h2 class="name">Laxman Dewasi</h2>
+         <p class="exp">Product designer and digital creative direct working in design</p>
+         <p class="exp">fields for 7 years so far, specialize user interface design</p>
+         <p id="btns"><button id="hire">Hire Me</button> <button id="know">Know More</button></p>
+         <p class="design"><i class="fa-brands fa-react"></i> Product designer and Developer <br>specialize in ui/ux</p>
+        <div class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Schwind_eye_tech_solutions_Logo.svg/1200px-Schwind_eye_tech_solutions_Logo.svg.png" alt="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFvKVsfiK-O-QYhPCojl5VqwjmjvwGKz5jkg&s" alt="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7QKZvsSVZWfA8OsXZKcuX9neRptxNstm3KD56uqmz6JxpqoHfojEkdYpwboGKiN62Dw&usqp=CAU" alt="">
+      <img src="https://www.logo-designer.co/storage/2021/05/2021-upwork-new-logo-design.png" alt="">
+      
+      </div>
+        </div>
+        <div class="right">
+          <img src="images/myimg.jpg" alt="">
+          <div class="award">
+            <h4>330</h4>
+            <p>Projects Completed</p>
+          </div>
+          <div class="projects">
+            <i class="fa-solid fa-trophy"></i>
+            <p>best design award</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      </div>
+       
+       <div class="main2">
+        <div class="footer1">
+      <h1>7+</h1>
+      <p>years <br>working <br>experiance</p>
+      
+      
+        </div>
+        <div class="footer2">
+          <i class="fa-regular fa-lightbulb"></i>
+          <h5>frontend developer </h5>
+          <p>we provides with a structure courese</p>
+        </div>
+        <div class="footer3">
+          <i class="fa-solid fa-lightbulb"></i>
+          <h5>UI/UX designer</h5>
+          <p>the user interface is the graphical layout</p>
+        </div>
+        <div class="footer4">
+          <i class="fa-brands fa-shirtsinbulk"></i>
+          <h5>Branding Designer</h5>
+          <p>A brand designer someone who has a genuine</p>
+        </div>
+       </div>
+        </div>
+      </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>
